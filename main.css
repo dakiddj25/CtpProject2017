@@ -1,0 +1,183 @@
+body {
+	
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: #484848
+}
+
+p{
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+a:link {
+	font-size: 16px;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+
+a:visited{
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6,ul,ol,li {
+	margin: 0;
+	padding: 0;
+}
+
+ul,ol{
+	list-style-type: none;
+}
+
+/* Top- Nav*/
+
+.top-nav{
+	position: fixed;
+	width: 100%;
+	height: 63px;
+	border-bottom: 1px solid #ccc;
+	z-index: 2;
+	background: rgba(224, 141, 136,0.8); 
+}
+
+
+.logo:link{
+	color: #484848;
+	display: inline-block;
+	padding: 3px;
+	transition: all; 0.3s ease;
+	border-right: 1px solid #ccc;
+}
+
+.logo:visited {
+	color: #484848;
+}
+.logo:hover{
+	background-color: #ccc;
+}
+
+.logo img{
+	padding: 5px;
+	width: 115px;
+}
+
+/*Music Player Dashboard*/
+
+.container
+{
+	padding: 90px;
+	position: relative;
+	width: 60%;
+	margin-left: 190px;
+	
+}
+
+.player
+{
+	position: relative;
+	background: #b0013c;
+	border-radius: 0 0 11px 11px;
+	overflow: hidden;
+}
+
+.player-head
+{
+	position: relative;
+	height: 250px;
+	overflow: hidden;
+	text-align: center;
+	box-shadow: insert 0 0 11px rgba(0,0,0,0.3);
+}
+
+.player-head:before
+{
+	position: absolute;
+	content: '';
+	width: 370px;
+	height: 200px;
+	border-radius: 9px;
+	margin-left: 25px;
+	margin-top: 81px;
+	display: block;
+	background: rgba(163,0,50,0.1);
+	box-shadow: insert 40px 40px 105px 20px rgba(0,0,0,0.1),
+				insert -40px -40px 105px 20px rgba(0,0,0,0.1);
+
+}
+
+.song-cover
+{
+	width: 370px;
+	margin-top: 80px;
+	border-top: 3px solid #5b0721;
+	border-radius: 9px;
+}
+
+.player-body
+{
+	position: relative;
+	height: 200px;
+	overflow: hidden;
+	text-align: center;
+	border-top: 1px solid rgba(111,2,41,0.7);
+	background: rgba(255,255,255,0.2);
+
+}
+
+.player-body img
+{
+	margin-top: -170px;
+	filter: blur(21px);
+}
+
+.album-info
+{
+	position: absolute;
+	width: 100%;
+	top: 0;
+}
+.album-title
+{
+	display: block;
+	font-size: 19px;
+	font-weight: bold;
+	color: #fffffb;
+	padding: 30px 0 5px 0;
+	text-transform: uppercase;
+}
+
+.song-title
+{
+	display: block;
+	font-size: 14px;
+	color: #fffffb;
+	padding: 15px 0 5px 0;
+	text-transform: uppercase;
+}
+
+.player-controls
+{
+
+	display: block;
+	color: rgba(255,255,255,1);
+	font-size: 31px;
+	padding-top: 25px;
+	padding-left: 35px;
+}
+
+.player-controls i 
+{
+
+	margin-right: 35px;
+}
+
+.player-controls i.active
+{
+	color: rgba(255,255,255,0.7);
+}
